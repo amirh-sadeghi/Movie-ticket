@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./src/style.css" rel="stylesheet" />
+        <script type="module" src="/src/main.js" defer></script>
+        <title>movie-ticket-booking</title>
+    </head>
+    <body>
+        <div id="app">
+            <header class="header-container" id="page-header">
+                <div>
+                    <h1>Ticket Movie Booking</h1>
+                    <button class="cart-toggle" id="cart-toggle" type="button">
+                        Cart
+                        <span class="shoppingCart-badge" id="cart-count"
+                            >0</span
+                        >
+                    </button>
+                </div>
+            </header>
+            <div class="cart-overlay" id="cart-overlay"></div>
+
+            <aside class="cart-sidebar" id="cart-sidebar">
+                <div class="cart-sidebar-header">
+                    <h2>Your Cart</h2>
+                    <button id="cart-close" type="button">Close</button>
+                </div>
+
+                <div id="cart-items">
+                    <p>Your cart is empty.</p>
+                </div>
+
+                <div class="cart-summary">
+                    <p>Total: <span id="cart-total">&euro;0</span></p>
+                    <button id="cart-checkout" type="button" disabled>Checkout</button>
+                </div>
+            </aside>
+
+            <main id="main-content">
+                <form class="filters-section" id="filter-form">
+                    <div class="fieldset-filters">
+                        <label for="search-input">Search:</label><br />
+                        <input
+                            class="fieldset-input fieldset-focus"
+                            id="search-input"
+                            type="search"
+                            placeholder="Search movie ..."
+                            name="search-name"
+                        />
+                    </div>
+                    <div class="fieldset-filters">
+                        <label for="genre-select">Genre:</label><br />
+                        <select
+                            class="fieldset-select fieldset-focus"
+                            id="genre-select"
+                            name="select-name"
+                        >
+                            <option value="">Select genre</option>
+                            <option value="Sci-Fi">Sci-Fi</option>
+                            <option value="Animation">Animation</option>
+                            <option value="Action">Action</option>
+                            <option value="Thriller">Thriller</option>
+                            <option value="Musical">Musical</option>
+                        </select>
+                    </div>
+                    <div class="fieldset-filters" id="price-container">
+                        <label for="max-price-input">Max Price:</label><br />
+                        <input
+                            id="max-price-input"
+                            type="range"
+                            max="15"
+                            min="5"
+                            step="1"
+                            value="15"
+                            class="fieldset-input"
+                            name="range-name"
+                        />
+                        <p id="max-price-value">&euro;15</p>
+                    </div>
+                    <div id="availability-container">
+                        <div class="fieldset-filters">
+                            <input
+                                type="checkbox"
+                                value="available"
+                                id="available"
+                                name="checkbox-name"
+                            />
+                            <label for="available">Available</label>
+                        </div>
+                        <div class="fieldset-filters">
+                            <input
+                                type="checkbox"
+                                value="soldOut"
+                                id="sold-out"
+                                name="checkbox-name"
+                            />
+                            <label for="sold-out">Sold Out</label>
+                        </div>
+                    </div>
+                </form>
+                <section class="column" id="available-movies-section">
+                    <div class="movie">
+                        <div class="movie-title">
+                            <h3>Available Movies</h3>
+                            <p class="movie-count" id="available-count">0</p>
+                        </div>
+                        <div id="available-movies-list">
+                            <!--Available Movies will render here-->
+                        </div>
+                    </div>
+                </section>
+                <section class="column" id="non-available-movies-section">
+                    <div class="movie">
+                        <div class="movie-title">
+                            <h3>Non Available Movies</h3>
+                            <p class="movie-count" id="non-available-count">
+                                0
+                            </p>
+                        </div>
+                        <div id="non-available-movies-list">
+                            <!--Sold Out Movies will render here-->
+                        </div>
+                    </div>
+                </section>
+            </main>
+    </body>
+</html>

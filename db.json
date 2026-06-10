@@ -1,0 +1,150 @@
+{
+  "movies": [
+    {
+      "id": "1",
+      "title": "Inception",
+      "genre": "Sci-Fi",
+      "poster": "https://image.tmdb.org/t/p/w342/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg",
+      "price": 10.5,
+      "availableSeats": 8
+    },
+    {
+      "id": "2",
+      "title": "The Lion King",
+      "genre": "Animation",
+      "poster": "https://image.tmdb.org/t/p/w342/sKCr78MXSLixwmZ8DyJLrpMsd15.jpg",
+      "price": 8,
+      "availableSeats": 9
+    },
+    {
+      "id": "3",
+      "title": "Avengers: Endgame",
+      "genre": "Action",
+      "poster": "https://image.tmdb.org/t/p/w342/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg",
+      "price": 12,
+      "availableSeats": 0
+    },
+    {
+      "id": "4",
+      "title": "Parasite",
+      "genre": "Thriller",
+      "poster": "https://image.tmdb.org/t/p/w342/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+      "price": 9.5,
+      "availableSeats": 6
+    },
+    {
+      "id": "5",
+      "title": "La La Land",
+      "genre": "Musical",
+      "poster": "https://image.tmdb.org/t/p/w342/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
+      "price": 11,
+      "availableSeats": 4
+    },
+    {
+      "id": "6",
+      "title": "Interstellar",
+      "genre": "Sci-Fi",
+      "poster": "https://image.tmdb.org/t/p/w342/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+      "price": 13,
+      "availableSeats": 9
+    },
+    {
+      "id": "7",
+      "title": "The Matrix",
+      "genre": "Sci-Fi",
+      "poster": "https://image.tmdb.org/t/p/w342/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
+      "price": 10,
+      "availableSeats": 5
+    },
+    {
+      "id": "8",
+      "title": "Spider-Man: Into the Spider-Verse",
+      "genre": "Animation",
+      "poster": "https://image.tmdb.org/t/p/w342/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg",
+      "price": 9,
+      "availableSeats": 12
+    },
+    {
+      "id": "9",
+      "title": "Inside Out",
+      "genre": "Animation",
+      "poster": "https://image.tmdb.org/t/p/w342/2H1TmgdfNtsKlU9jKdeNyYL5y8T.jpg",
+      "price": 8.5,
+      "availableSeats": 4
+    },
+    {
+      "id": "10",
+      "title": "The Dark Knight",
+      "genre": "Action",
+      "poster": "https://image.tmdb.org/t/p/w342/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+      "price": 12.5,
+      "availableSeats": 7
+    },
+    {
+      "id": "11",
+      "title": "Mad Max: Fury Road",
+      "genre": "Action",
+      "poster": "https://image.tmdb.org/t/p/w342/hA2ple9q4qnwxp3hKVNhroipsir.jpg",
+      "price": 11.5,
+      "availableSeats": 0
+    },
+    {
+      "id": "12",
+      "title": "Get Out",
+      "genre": "Thriller",
+      "poster": "https://image.tmdb.org/t/p/w342/tFXcEccSQMf3lfhfXKSU9iRBpa3.jpg",
+      "price": 9,
+      "availableSeats": 8
+    },
+    {
+      "id": "13",
+      "title": "Joker",
+      "genre": "Thriller",
+      "poster": "https://image.tmdb.org/t/p/w342/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
+      "price": 10.5,
+      "availableSeats": 0
+    },
+    {
+      "id": "14",
+      "title": "The Greatest Showman",
+      "genre": "Musical",
+      "poster": "https://image.tmdb.org/t/p/w342/b9CeobiihCx1uG1tpw8hXmpi7nm.jpg",
+      "price": 10,
+      "availableSeats": 13
+    },
+    {
+      "id": "15",
+      "title": "Whiplash",
+      "genre": "Musical",
+      "poster": "https://image.tmdb.org/t/p/w342/7fn624j5lj3xTme2SgiLCeuedmO.jpg",
+      "price": 9.5,
+      "availableSeats": 5
+    }
+  ],
+  "bookings": [
+    {
+      "items": [
+        {
+          "movieId": 5,
+          "title": "La La Land",
+          "quantity": 4,
+          "price": 11,
+          "totalPrice": 44
+        },
+        {
+          "movieId": 4,
+          "title": "Parasite",
+          "quantity": 3,
+          "price": 9.5,
+          "totalPrice": 28.5
+        }
+      ],
+      "totalTickets": 7,
+      "discount": 10,
+      "totalAmount": 72.5,
+      "finalAmount": 65.25,
+      "id": "OMugeq4WjXs"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
